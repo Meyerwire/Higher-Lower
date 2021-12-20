@@ -16,7 +16,7 @@ def richtig(nutzer_zahl):
     elif nutzer_zahl == richtige_zahl:
         return render_template('right.html')
     elif nutzer_zahl > richtige_zahl:
-        return render_template('lower-html')
+        return render_template('lower.html')
     elif nutzer_zahl < richtige_zahl:
         return render_template('higher.html')
 
