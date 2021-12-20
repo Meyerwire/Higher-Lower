@@ -9,7 +9,7 @@ app = Flask(__name__)
 def zahlErraten():
     return render_template('index.html')
 
-@app.route('/int:nutzer_zahl')
+@app.route('/<int:nutzer_zahl>')
 def richtig(nutzer_zahl):
     if nutzer_zahl > 9 or nutzer_zahl < 0:
         return render_template('cheat.html')
